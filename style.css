@@ -1,0 +1,57 @@
+/* General Body Styles */
+body {
+    background-color: #ffffff; /* White background */
+    font-family: 'Arial', sans-serif;
+    color: #000000; /* Black text */
+}
+
+/* Header Styles */
+.header {
+    background-color: #0a3c72; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #0a3c72; /* Blue border */
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Button Styles */
+.btn-custom {
+    background-color: #0a3c72; /* Blue button background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Container Padding */
+.container {
+    padding-top: 50px;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #ffffff; /* White footer */
+    color: #000000; /* Black text */
+    border-top: 1px solid #0a3c72; /* Blue border */
+}
