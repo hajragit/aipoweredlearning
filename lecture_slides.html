@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Lecture Slides</title>
+    <style>
+        body {
+            background-color: #ECF0F1;
+            font-family: 'Arial', sans-serif;
+            color: #2C3E50;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+            padding: 40px 0;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .container {
+            width: 70%;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-left: 8px solid #003366;
+            border-right: 8px solid #003366;
+        }
+        label {
+            display: block;
+            margin: 15px 0 8px;
+            font-size: 18px;
+            color: #2C3E50;
+            font-weight: 500;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border: 1px solid #BDC3C7;
+            border-radius: 6px;
+            font-size: 16px;
+            color: #34495E;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #003366;
+            outline: none;
+        }
+        button {
+            background-color: #003366;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1ABC9C;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #BDC3C7;
+            font-weight: 400;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate Lecture Slides</h1>
+    <div class="container">
+        <form action="/slides" method="POST">
+            <label for="topic">Enter the topic for the presentation:</label>
+            <input type="text" id="topic" name="topic" required>
+            <button type="submit">Generate Slides</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Lecture Slides Generator | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Background color for the page */
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        /* Header section */
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #003366;
+            color: white;
+        }
+
+        /* Card styling */
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #003366;
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px;
+        }
+
+        .card-body {
+            background-color: white;
+            padding: 25px;
+        }
+
+        /* Button styling */
+        .btn-primary {
+            background-color: #003366;
+            border-color: #003366;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive card layout */
+        .col-md-4 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Interactive Tools</h1>
+        <p>Choose a tool to get started:</p>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card shadow-lg p-4">
+                    <div class="card-header text-center">
+                        Understanding Handouts
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Upload a PDF and ask questions to understand its content.</p>
+                        <a href="{{ url_for('understanding_handouts') }}" class="btn btn-primary w-100">Go to PDF Query</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-lg p-4">
+                    <div class="card-header text-center">
+                        Lecture Slides
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Generate Lecture Slides from your content.</p>
+                        <a href="{{ url_for('lecture_slides') }}" class="btn btn-primary w-100">Generate Slides</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-lg p-4">
+                    <div class="card-header text-center">
+                        Quiz Generation
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Generate quizzes based on the content you provide.</p>
+                        <a href="{{ url_for('quiz_generation') }}" class="btn btn-primary w-100">Create Quiz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Interactive Tools. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
